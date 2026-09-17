@@ -77,11 +77,13 @@
     <script>
         const botoes = document.querySelectorAll("button");
         botoes.forEach(function (botao) {
+            let curtiu = false;
             botao.addEventListener("click", botaoClicado);
         });
 
         function botaoClicado(event) {
             let texto = event.currentTarget.querySelector("span");
+            
             texto.textContent++;
 
         }
