@@ -79,7 +79,7 @@
         botoes.forEach(function (botao) {
             let curtiu = false;
             botao.addEventListener("click", botaoClicado);
-        });
+        
 
         function botaoClicado() {
             let texto = botao.querySelector("span");
@@ -91,6 +91,7 @@
                 curtiu = false;
             }
         }
+    });
     </script>
 
 </body>
